@@ -6,8 +6,8 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-List languageCode = ["en", "ta"];
-List countryCode = ["US", "IN"];
+List languageCode = ["en", "ta", "bn"];
+List countryCode = ["US", "IN", "BD"];
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
@@ -47,9 +47,13 @@ class _MyHomePageState extends State<MyHomePage> {
       children: [
         button("English", 0),
         SizedBox(
-          width: 50,
+          width: 30,
         ),
         button("தமிழ்", 1),
+        SizedBox(
+          width: 30,
+        ),
+        button("বাংলা", 2),
       ],
     );
   }

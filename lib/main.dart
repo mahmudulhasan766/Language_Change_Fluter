@@ -5,7 +5,11 @@ import 'HomePage.dart';
 void main() {
   runApp(EasyLocalization(
     child: MyApp(),
-    supportedLocales: [Locale('en', 'US'), Locale('ta', 'IN')],
+    supportedLocales: [
+      Locale('en', 'US'),
+      Locale('ta', 'IN'),
+      Locale('bn', 'BD')
+    ],
     saveLocale: true,
     fallbackLocale: Locale('en', 'US'),
     path: 'assets/translations',
